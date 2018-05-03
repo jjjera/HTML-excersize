@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="/home/jerold/Desktop/jquerry/animate.css"/>
+<script>$(document).ready(function(){});
+$("button").addClass("animated bounce");
+</script>
+<style>
+body{
+  background-color: #000;
+}
+.container{
+  height:550px;
+  width:500px;
+  background-color: grey;
+  border:5px solid blue;
+}
+.image{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+}
+.text{
+  font-size: 30px;
+  font-family:sans-serif;
+}
+.row{
+  margin-top: 10px;
+
+}
+.move-right{
+
+  width:50%;
+  margin: 10px 50px 50px 50px;
+}
+</style>
+<html>
+<head>
+<title>Form for user profile.</title>
+</head>
+<body>
+<div class="container">
+<form action="form-field">
+  <div class="row">
+    <div class="col-md-8">
+  <h2 class="text text-center">User Personel Information:</h2>
+</div>
+<div class="col-md-4">
+  <img class="image " src="/home/jerold/Downloads/person.png" /><br><br>
+</div>
+</div>
+<div class="move-right">
+Name:<input type="text" size="40" pattern="pattern="[a-zA-Z][a-zA-Z\s]*" /><br><br>
+Male:<input type="checkbox">
+Female:<input type="checkbox">
+<br><br>
+Age:<input type="number"  size="40" pattern="[0-9]" /><br><br>
+address:<input type="text"  size="40" max="5" /><br><br>
+<input type="date"  min="01-01-1990"/><br><br>
+<select name="Citizenship" ><br><br>
+  <option value="America">America</option>
+  <option value="Australia">Australia</option>
+  <option value="Canada">Canada</option>
+  <option value="India">India</option>
+</select><br><br>
+<button class="btn btn-primary "><i class="fa  fa-paper-plane"></i>Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
